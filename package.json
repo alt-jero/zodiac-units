@@ -1,0 +1,26 @@
+{
+  "name": "zodiac-units",
+  "version": "1.0.0",
+  "description": "Library to handle decimal degrees, degree-minute-second and degree-minute-second-sign celestial longitudes",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alt-jero/zodiac-units.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Jeremy Rumble",
+    "email": "jero.rumble@gmail.com"
+  },
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/alt-jero/zodiac-units/issues"
+  },
+  "homepage": "https://github.com/alt-jero/zodiac-units#readme",
+  "devDependencies": {
+    "ava": "^2.4.0"
+  }
+}
