@@ -1,6 +1,6 @@
 // Import Sign Name converter
 const { getSignName } = require('./getSignName')
-const signOffset = require('./signOffset')
+const { getSignOffset } = require('./getSignOffset')
 
 class PositionSign {
   constructor(degrees, minutes, seconds, sign) {
@@ -36,18 +36,16 @@ class PositionSign {
   }
 
   static fromDegrees(degrees, minutes, seconds) {
-    const sign = getSignName(degrees)
-    const offset = signOffset[sign]
+    const offset = getSignOffset(degrees)
     const longitude = degrees - offset
     return new PositionSign(longitude, minutes, seconds, offset)
   }
 
   static fromDecimal(longitude) {
-    const sign = getSignName(longitude)
     const degrees = Math.floor(longitude % 30)
     const minutes = Math.floor(longitude % 1 * 60)
     const seconds = longitude % 1 * 60 % 1 * 60
-    const offset = signOffset[sign]
+    const offset = getSignOffset(longitude)
     return new PositionSign(degrees, minutes, seconds, offset)
   }
 }

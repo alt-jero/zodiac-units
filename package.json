@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/alt-jero/zodiac-units.git"
   },
-  "keywords": [],
+  "keywords": ["zodiac"],
   "author": {
     "name": "Jeremy Rumble",
     "email": "jero.rumble@gmail.com"
